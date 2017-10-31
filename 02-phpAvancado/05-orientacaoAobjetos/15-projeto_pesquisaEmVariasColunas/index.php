@@ -28,7 +28,7 @@ if(isset($_POST['campo']) && !empty($_POST['campo'])){
     
     
     if($sql->rowCount() > 0){
-        $sql = $sql->fetch();
+        $sql = $sql->fetch();   
     
         echo 'Nome do usuário: '.$sql['nome'];
     }
