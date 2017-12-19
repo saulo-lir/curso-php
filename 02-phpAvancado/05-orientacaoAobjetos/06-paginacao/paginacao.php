@@ -2,7 +2,7 @@
 
 try{
     $pdo = new PDO('mysql:dbname=usuarios;host=localhost','root','');
-    
+
 }catch(PDOException $ex){
     echo 'ERRO: '.$ex->getMessage();
 }
@@ -26,7 +26,7 @@ $paginas = $total / 10; // Total de linhas da tabela divido pelo total de linhas
 
 $pg = 1; // Definindo o número da primeira página
 
-if(isset($_GET['p']) && !empty($_GEt['p'])){
+if(isset($_GET['p']) && !empty($_GET['p'])){
     $pg = addslashes($_GET['p']);
 }
 
@@ -36,7 +36,7 @@ $sql = "SELECT * FROM usuarios LIMIT $p, 10"; // Limite inicial, limite final
 $sql = $pdo->query($sql);
 
 if($sql->rowCount() > 0){
-    
+
     foreach($sql->fetchAll() as $usuario){
         echo $usuario['nome'].' - '.$usuario['email'].'<br/>';
     }
