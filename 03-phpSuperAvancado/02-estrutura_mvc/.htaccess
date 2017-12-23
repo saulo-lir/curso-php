@@ -1,0 +1,22 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /curso-php/03-phpSuperAvancado/02-estrutura_mvc/index.php?url=$1 [QSA,L]
+
+
+# QSA é acronimo para Query String Append.
+# Indica que se houver uma query string na URL, será passada para o parâmetro determinado imediatamente antes do [QSA,L]
+
+
+# Exemplificando:
+
+# Quando o usuário acessar: www.meusite.com.br/contato
+# Será verificado se /contato:
+
+# 1) É um arquivo. Caso seja, será ignorado e portanto não vai ser acessado
+# 2) É um diretório. Caso seja, será ignorado e portanto não vai ser acessado
+
+# Mesmo o usuário acessando www.meusite.com.br/contato,
+# O servidor irá entender dessa forma: www.meusite.com.br/index.php?url=contato
+
+# Em resumo, a página pode ser acessada de forma mais elegante pelo usuário
