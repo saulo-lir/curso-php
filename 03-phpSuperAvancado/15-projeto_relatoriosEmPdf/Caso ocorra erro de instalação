@@ -1,0 +1,2 @@
+Ao instalar a dependência mpdf, caso ocorra erro (no Linux),
+instalar primeiro o pacote php-gd, pelo synaptic

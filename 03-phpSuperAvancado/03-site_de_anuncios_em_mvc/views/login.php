@@ -1,29 +1,6 @@
 <div class='container'>
     <h1>Login</h1>
 
-    <?php
-
-        $usuario = new Usuarios();
-
-        if(isset($_POST['email']) && !empty($_POST['email'])){
-            $email = addslashes($_POST['email']);
-            $senha = $_POST['senha'];
-
-            if($usuario->login($email,$senha)){
-    ?>
-            <script type='text/javascript'>window.location.href='<?= BASE_URL ?>';</script> <!-- Método javascript para redirecionar para página inicial -->
-    <?php
-            }else{
-    ?>
-            <div class='alert alert-danger'>
-                Usuário ou Senha inválidos!
-            </div>
-    <?php
-            }
-
-        }
-    ?>
-
     <form method='POST'>
 
         <div class='form-group'>

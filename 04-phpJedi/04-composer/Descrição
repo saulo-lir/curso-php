@@ -1,0 +1,43 @@
+O composer é um gerenciador de dependências (bibliotecas) do php 
+criadas por terceiros. Através dele podemos utilizar essas
+dependências em nossos projetos.
+Estas dependências ficam hospedadas em https://packagist.org/
+
+O composer pode ser baixado no site oficial: https://getcomposer.org/
+
+
+Instalação:
+
+1) Baixar o composer e copiá-lo para a pasta do projeto
+2) No projeto, criar o arquivo composer.json, 
+pois é nele que será mostrado ao composer quais dependências utilizaremos.
+Sua estrutura é a seguinte:
+
+{
+  "require":{
+    "monolog/monolog": "1.0.*"
+ diretório chamado vendor / nome da dependência : Versão da biblioteca. O * indica a versão mais atual
+  }
+}
+
+
+
+3) Instalar o composer pelo prompt com os comandos (abrir o prompt na pasta do projeto): 
+
+    sudo apt install composer    (Instala o pacote do composer)
+
+    composer install   (Instala a dependência indicada no arquivo composer.json)
+
+
+4) Carregar o no index.php, p arquivo autoload.php da pasta vendor, gerada automaticamente após a instalação do composer
+
+    require 'vendor/autoload.php';
+
+
+
+4) Caso seja necessário atualizar a dependência que estamos trabalhando, utilizar o comando:
+
+
+    composer update
+
+
