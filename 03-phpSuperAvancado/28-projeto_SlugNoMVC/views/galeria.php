@@ -5,7 +5,7 @@
 <ul>
   <?php foreach($albuns as $album){ ?>
     <li>
-      <a href="<?= BASE_URL ?>galeria/abrir/$album['id']">
+      <a href="<?= BASE_URL ?>galeria/abrir/<?=$album['slug']?>">
         <?= $album['titulo'] ?>
       </a>
     </li>

@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /curso-php/03-phpSuperAvancado/28-projeto_SlugNoMVC/index.php?url=$1 [QSA,L]

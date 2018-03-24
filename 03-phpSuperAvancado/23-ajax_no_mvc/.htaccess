@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /curso-php/03-phpSuperAvancado//opt/lampp/htdocs/curso-php/03-phpSuperAvancado/20-projetoErro404NoMVC/index.php?url=$1 [QSA,L]
