@@ -22,7 +22,7 @@ $sql = $sql->fetch();
 
 $total = $sql['c'];
 
-$paginas = $total / 10; // Total de linhas da tabela divido pelo total de linhas a serem exibidas por página
+$paginas = ceil($total / 10); // Total de linhas da tabela divido pelo total de linhas a serem exibidas por página
 
 $pg = 1; // Definindo o número da primeira página
 
