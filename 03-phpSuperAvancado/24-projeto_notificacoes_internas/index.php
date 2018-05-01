@@ -1,6 +1,7 @@
  <html>
   <head>
-    <title>Notificações internas</title>
+    <title>Notificações internas</title>    
+    
     <style type='text/css'>
     	.notificacoes{
     		width:30px;
@@ -10,6 +11,11 @@
     		line-height: 30px;
     		color:#000;
     		font-size:16px;
+    	}
+
+    	.tem_notif{
+    		background-color: #FF0000;
+    		color: #FFF;    		
     	}
     	
     </style>
@@ -22,9 +28,13 @@
   		0
   	</div>
 
-   
+    <hr/>
 
-    <script type='javascript' src='jquery-3.3.1.min.js'></script>
-    <script type='javascript' src='script.js'></script>
+
+    <button class='addNotif'>Criar Notificação</button>
+    
+
+    <script type='text/javascript' src='jquery-3.3.1.min.js'></script>
+    <script type='text/javascript' src='script.js'></script>
   </body>
 </html>
