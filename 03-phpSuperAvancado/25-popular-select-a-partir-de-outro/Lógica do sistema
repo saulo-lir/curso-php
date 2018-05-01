@@ -1,0 +1,7 @@
+
+- Fazer a listagem do primeiro <select></select>
+- Disparar uma ação javascript: onchange (pegar o item selecionado)
+- Requisição ajax, enviando esse item selecionado
+- Faz uma consulta na tabela que tem relação com a primeira, filtrando os dados relacionados
+- Cria um json com as opções e retorna
+- Usa o json para popular o segundo <select></select>
