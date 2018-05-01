@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /opt/lampp/htdocs/curso-php/03-phpSuperAvancado/26-paginacao-no-mvc/index.php?url=$1 [QSA,L]
