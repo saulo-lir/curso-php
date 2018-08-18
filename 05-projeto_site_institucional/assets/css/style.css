@@ -1,0 +1,103 @@
+body{
+	margin:0;
+	background-color:#1e1e1e;
+}
+
+h1{
+	margin:0;
+	padding:0;
+}
+
+.topo{
+	width:100%;
+	max-width:980px;
+	height:470px;
+	margin:auto;
+}
+
+.topo1{
+	height:120px;
+}
+
+.banner{
+	height: 350px;
+	background-color:#FFF;
+	background-image: url('http://localhost/projeto_site_institucional/assets/img/01.jpg');
+	background-size: cover;
+}
+
+.menu{
+	width:100%;
+	max-width:980px;
+	margin:auto;
+	height:50px;
+	background-color:#0062b7;
+}
+
+.container{
+	width:100%;
+	max-width:980px;
+	margin:auto;
+	background-color:#FFF;
+	min-height:400px;
+}
+
+.rodape{
+	width:100%;
+	max-width:980px;
+	margin:auto;
+	height:100px;
+	background-color:#303030;
+	margin-bottom: 50px;
+}
+
+.menu ul{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+
+.menu li{
+	float:left;
+	height:50px; /* Mesma altura do Menu */
+	line-height:50px;
+	padding-left:10px;
+	padding-right:10px;
+	color:#FFF;
+}
+
+.home_sobre{
+	padding-top:20px;
+	padding-right:20px;
+}
+
+.home_sobre img{
+	float:left;
+	margin-right:20px;
+	margin-left:20px;
+}
+
+.home_portfolio{
+	padding:20px;
+	clear:both;
+}
+
+.portfolio_item{
+	width:200px;
+	height:150px;
+	float:left;
+	border:3px solid #e2e8ee;
+	margin:10px;
+}
+
+.contato input,
+.contato textarea{
+	width:400px;
+	height:30px;
+	border:1px solid #000;
+	border-radius: 5px;
+}
+
+.contato textarea{
+	height:150px;
+}
