@@ -1,0 +1,47 @@
+
+body{
+	background-image:url('../img/main.jpg');
+	
+}
+
+th{
+	text-align: center;
+}
+
+td{
+	text-align: justify;
+}
+
+i{
+	font-size:18px;
+}
+
+h4{
+	text-align: center;
+}
+
+#total-vagas{
+	font-size:26px;
+}
+
+
+.search-container{
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+.search-vaga{
+	padding:8px;
+	width:100%;
+	font-size:20px;
+}
+
+.vaga-content{
+	background-color:#FFF;
+	margin:auto;
+	margin-bottom:10px;
+	padding:20px;	
+	width:70%;
+	box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+	border-radius:5px;
+}
