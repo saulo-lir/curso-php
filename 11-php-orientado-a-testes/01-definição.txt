@@ -1,0 +1,20 @@
+1- Testes unitários são sistemas que são criados ou instalados paralelamente ao nosso sistema principal, com o intuito
+de realizar testes de funcionabilidade nesse sistema principal
+
+Ex.: Temos um sistema de calculadora, e criamos um teste para verificar a função somar()
+
+-> TESTE:
+  ->use o somar() e mande o número 1 e o número 1.
+  -> espere que o resultado seja 2.
+
+-> TESTE 2:
+  ->use o somar() e mande o número 10 e o número 20.
+  -> espere que o resultado seja 30.
+
+-> Basicamente o teste consiste em verificar se o resultado que esperamos está vindo correto.
+
+-> Os testes unitários testam os MÉTODOS das classes.
+
+-> Instalação: Na pasta do projeto, instalamos via composer: composer require phpunit/phpunit --dev
+
+-> Rodar o teste pelo terminal: ./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/CalculadoraTest
